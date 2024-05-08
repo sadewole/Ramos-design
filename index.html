@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MoniePoint - Ramos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          container: {
+            center: true,
+            screens: {
+              xl: '1200px',
+            },
+          },
+          extend: {
+            fontFamily: {
+              sans: 'Urbanist, sans-serif',
+            },
+            colors: {
+              'apt-black': '#0d0d0d',
+              'apt-gray': '#f9f9f9',
+              'apt-gray-50': '#F4F4F4',
+              'apt-yellow': '#ffd029',
+              'apt-orange': '#fe4a23',
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-sans">
+    <div class="xl:container py-3">
+      <header
+        class="flex justify-between items-center bg-apt-black py-2 px-4 rounded-2xl animatedSlideUpText"
+      >
+        <img src="./images/logo.png" alt="logo" class="w-[100px]" />
+        <div>
+          <ul class="flex bg-neutral-800 p-1.5 rounded-2xl overflow-hidden">
+            <li
+              class="text-white cursor-pointer hover:font-semibold hover:bg-neutral-700 px-4 py-2 rounded-2xl"
+              data-aos="fade-right"
+              data-aos-easing="linear"
+              data-aos-duration="200"
+            >
+              Dashboard
+            </li>
+            <li
+              class="text-white cursor-pointer hover:font-semibold hover:bg-neutral-700 px-4 py-2 rounded-2xl"
+              data-aos="fade-right"
+              data-aos-easing="linear"
+              data-aos-duration="300"
+            >
+              Reports
+            </li>
+            <li
+              class="text-white cursor-pointer hover:font-semibold hover:bg-neutral-700 px-4 py-2 rounded-2xl"
+              data-aos="fade-right"
+              data-aos-easing="linear"
+              data-aos-duration="400"
+            >
+              Documents
+            </li>
+            <li
+              class="text-white cursor-pointer hover:font-semibold hover:bg-neutral-700 px-4 py-2 rounded-2xl"
+              data-aos="fade-right"
+              data-aos-easing="linear"
+              data-aos-duration="500"
+            >
+              History
+            </li>
+            <li
+              class="text-white cursor-pointer hover:font-semibold hover:bg-neutral-700 px-4 py-2 rounded-2xl"
+              data-aos="fade-right"
+              data-aos-easing="linear"
+              data-aos-duration="600"
+            >
+              Settings
+            </li>
+          </ul>
+        </div>
+        <div>
+          <button class="bg-white px-8 py-3 rounded-2xl">Sign Up</button>
+        </div>
+      </header>
+    </div>
+    <main>
+      <!-- SECTION 1 -->
+      <section class="xl:container mx-auto py-16 my-20">
+        <div class="flex gap-10">
+          <div class="flex-auto mt-4">
+            <div class="flex justify-end pr-10 items-center gap-10">
+              <div class="flex -space-x-2 overflow-hidden">
+                <div
+                  class="inline-block bg-apt-gray-50 p-6 h-20 w-20 rounded-full ring-2 ring-white text-apt-orange"
+                  data-aos="zoom-in"
+                  data-aos-easing="linear"
+                  data-aos-duration="200"
+                >
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 512 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M194.82 496a18.36 18.36 0 0 1-18.1-21.53v-.11L204.83 320H96a16 16 0 0 1-12.44-26.06L302.73 23a18.45 18.45 0 0 1 32.8 13.71c0 .3-.08.59-.13.89L307.19 192H416a16 16 0 0 1 12.44 26.06L209.24 489a18.45 18.45 0 0 1-14.42 7z"
+                    ></path>
+                  </svg>
+                </div>
+                <div
+                  class="inline-block bg-apt-orange p-6 h-20 w-20 rounded-full ring-2 ring-white"
+                  data-aos="zoom-in"
+                  data-aos-easing="linear"
+                  data-aos-duration="350"
+                >
+                  <svg
+                    stroke="#fff"
+                    fill="#fff"
+                    stroke-width="0"
+                    viewBox="0 0 1024 1024"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M944 224c-44.192 0-79.999 35.824-79.999 80 0 9.072 1.84 17.632 4.607 25.76L673.6 497.68C659.92 486.784 642.848 480 624 480c-21.743 0-41.407 8.736-55.808 22.816l-152.752-76.48C412.465 384.848 378.241 352 336 352c-44.175 0-80 35.824-80 80 0 12.096 2.88 23.44 7.68 33.712L107.936 645.296C99.2 642.032 89.872 640 80 640c-44.176 0-80 35.824-80 80s35.824 80 80 80 80-35.824 80-80c0-10.64-2.176-20.767-5.952-30.048l158.272-181.92C319.856 510.368 327.696 512 336 512c23.28 0 44.047-10.112 58.671-26l149.408 74.912C544.608 604.656 580.127 640 624 640c44.193 0 80-35.824 80-80 0-1.424-.336-2.752-.416-4.16L911.68 377.072C921.584 381.456 932.463 384 944 384c44.193 0 80-35.808 80-80 0-44.176-35.807-80-79.999-80z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <h1
+                class="xl:text-[100px] lg:text-[80px] font-medium animatedText"
+              >
+                Analytics
+              </h1>
+            </div>
+            <h1
+              class="xl:text-[100px] lg:text-[80px] xl:-mt-6 font-medium animatedSlideUpText"
+            >
+              that <span class="text-gray-200">helps</span> you
+            </h1>
+          </div>
+          <div class="flex-none w-96">
+            <img
+              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bGFwdG9wfGVufDB8fDB8fHww"
+              alt="pc"
+              class="rounded-2xl"
+              data-aos="zoom-in"
+              data-aos-easing="linear"
+              data-aos-duration="600"
+            />
+          </div>
+        </div>
+        <div class="flex items-center justify-end xl:-mt-6 gap-4">
+          <h1 class="xl:text-[100px] lg:text-[80px] font-medium animatedText">
+            shape
+          </h1>
+          <div
+            class="inline-block bg-apt-yellow p-6 h-20 w-20 rounded-full ring-2 ring-white"
+            data-aos="zoom-in"
+            data-aos-easing="linear"
+            data-aos-duration="500"
+          >
+            <svg
+              stroke="#000"
+              fill="#000"
+              stroke-width="0"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3 12H5V21H3V12ZM19 8H21V21H19V8ZM11 2H13V21H11V2Z"
+              ></path>
+            </svg>
+          </div>
+          <h1 class="xl:text-[100px] lg:text-[80px] font-medium animatedText">
+            the future
+          </h1>
+        </div>
+      </section>
+      <!-- SECTION 2 -->
+      <section class="rounded-[70px] bg-apt-gray py-24">
+        <div class="xl:container">
+          <div class="flex justify-between items-center">
+            <div>
+              <h2 class="font-medium text-5xl">Your key to strategic</h2>
+              <h2 class="font-medium text-5xl">success through analytics</h2>
+            </div>
+            <div>
+              <p class="text-xl">Ready for exciting, instantaneous</p>
+              <p class="text-xl">all-accessible insights in real time?</p>
+            </div>
+          </div>
+          <!-- cards -->
+          <div class="flex gap-10 mt-20">
+            <div
+              class="w-2/3 grid grid-cols-2 bg-white border rounded-2xl shadow-md overflow-hidden"
+            >
+              <div class="p-6 flex flex-col">
+                <div class="flex-1">
+                  <span class="bg-apt-yellow py-1 px-2 shadow-sm rounded-lg">
+                    Setting up reports
+                  </span>
+                </div>
+                <div>
+                  <p
+                    class="text-3xl mb-6"
+                    data-aos="fade-up"
+                    data-aos-easing="ease-in-sine"
+                    data-aos-duration="400"
+                  >
+                    Fast and easy access to analytics
+                  </p>
+                  <p
+                    class="text-gray-500"
+                    data-aos="fade-up"
+                    data-aos-easing="ease-in-sine"
+                    data-aos-duration="300"
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatibus laborum magni est maxime mollitia praesentium.
+                    Asperiores voluptates reprehenderit, recusandae deserunt
+                    vero quibusdam? Iure deserunt cumque cum sequi iste, nemo
+                    quisquam!
+                  </p>
+                </div>
+              </div>
+              <!--  -->
+              <div class="flex-1 pt-6">
+                <div class="border-t border-l rounded-tl-2xl p-4">
+                  <p class="mb-4">Sales statistics</p>
+
+                  <div class="flex gap-4">
+                    <div class="flex-auto flex gap-4 items-center">
+                      <div
+                        class="inline-block bg-apt-orange p-4 h-16 w-16 rounded-full ring-2 ring-white"
+                        data-aos="zoom-in"
+                        data-aos-easing="ease-in-sine"
+                        data-aos-duration="600"
+                      >
+                        <svg
+                          stroke="#fff"
+                          fill="#fff"
+                          stroke-width="0"
+                          viewBox="0 0 1024 1024"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M21.84 301.808l475.09 258.72a32.093 32.093 0 0 0 15.312 3.904 31.99 31.99 0 0 0 15.184-3.84l480.096-258.72c10.464-5.631 16.975-16.624 16.815-28.528a32.088 32.088 0 0 0-17.504-28.16L531.713 3.904c-9.055-4.592-19.744-4.624-28.88-.064L22.785 245.12c-10.624 5.343-17.44 16.16-17.632 28.064s6.256 22.944 16.687 28.624zM517.153 68.287l406.159 206.271L512.336 496.03 106.16 274.846zm484.187 412.031l-94.974-48.225-68.56 36.976 80 40.624-410.96 221.456-406.191-221.184 85.311-42.88-68.368-37.248-100.32 50.4c-10.624 5.344-17.44 16.16-17.633 28.065s6.256 22.944 16.688 28.624l475.088 258.72a32.092 32.092 0 0 0 15.312 3.903 31.99 31.99 0 0 0 15.184-3.84l480.096-258.72c10.464-5.631 16.975-16.624 16.815-28.528a31.996 31.996 0 0 0-17.487-28.143zm.01 223.999l-89.966-44.224-68.56 36.976 75.008 36.624-410.976 221.456-406.192-221.184 79.312-35.872-68.368-37.248-94.32 43.408C6.662 709.597-.154 720.413-.346 732.318s6.255 22.944 16.687 28.624l475.088 258.72a32.092 32.092 0 0 0 15.313 3.903 31.99 31.99 0 0 0 15.183-3.84l480.096-258.72c10.464-5.632 16.976-16.624 16.816-28.528a32.002 32.002 0 0 0-17.488-28.16z"
+                          ></path>
+                        </svg>
+                      </div>
+                      <div>
+                        <p class="text-gray-300 font-medium">Total profit</p>
+                        <p class="text-3xl">
+                          <span class="text-lg">$</span>
+                          <span
+                            data-purecounter-start="0"
+                            data-purecounter-end="265"
+                            class="purecounter"
+                            >0</span
+                          >
+                          K
+                        </p>
+                      </div>
+                    </div>
+                    <div class="flex-auto bg-gray-100 p-4 rounded-2xl">
+                      <p>Visitors</p>
+                      <div class="h-1 rounded-full bg-gray-200 my-2.5">
+                        <div class="h-full w-3/5 bg-green-500"></div>
+                      </div>
+                      <p class="text-3xl">
+                        <span
+                          data-purecounter-start="0"
+                          data-purecounter-end="56"
+                          class="purecounter"
+                          >0</span
+                        >
+                        K
+                      </p>
+                    </div>
+                  </div>
+                  <div class="my-4 p-2 border-l border-b flex">
+                    <img
+                      src="./images/increase.png"
+                      alt="grapgh"
+                      class="h-24 mx-auto"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-1/3 bg-apt-black p-6 rounded-2xl px-16 flex flex-col">
+              <div class="flex-1 mb-4">
+                <div class="flex gap-10 justify-center">
+                  <div
+                    class="flex-auto w-1/2 flex flex-col items-center justify-center py-4 border border-gray-700 rounded-2xl"
+                  >
+                    <div class="w-5 h-5">
+                      <svg
+                        stroke="#ffd029"
+                        fill="#ffd029"
+                        stroke-width="0"
+                        viewBox="0 0 1024 1024"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M21.84 301.808l475.09 258.72a32.093 32.093 0 0 0 15.312 3.904 31.99 31.99 0 0 0 15.184-3.84l480.096-258.72c10.464-5.631 16.975-16.624 16.815-28.528a32.088 32.088 0 0 0-17.504-28.16L531.713 3.904c-9.055-4.592-19.744-4.624-28.88-.064L22.785 245.12c-10.624 5.343-17.44 16.16-17.632 28.064s6.256 22.944 16.687 28.624zM517.153 68.287l406.159 206.271L512.336 496.03 106.16 274.846zm484.187 412.031l-94.974-48.225-68.56 36.976 80 40.624-410.96 221.456-406.191-221.184 85.311-42.88-68.368-37.248-100.32 50.4c-10.624 5.344-17.44 16.16-17.633 28.065s6.256 22.944 16.688 28.624l475.088 258.72a32.092 32.092 0 0 0 15.312 3.903 31.99 31.99 0 0 0 15.184-3.84l480.096-258.72c10.464-5.631 16.975-16.624 16.815-28.528a31.996 31.996 0 0 0-17.487-28.143zm.01 223.999l-89.966-44.224-68.56 36.976 75.008 36.624-410.976 221.456-406.192-221.184 79.312-35.872-68.368-37.248-94.32 43.408C6.662 709.597-.154 720.413-.346 732.318s6.255 22.944 16.687 28.624l475.088 258.72a32.092 32.092 0 0 0 15.313 3.903 31.99 31.99 0 0 0 15.183-3.84l480.096-258.72c10.464-5.632 16.976-16.624 16.816-28.528a32.002 32.002 0 0 0-17.488-28.16z"
+                        ></path>
+                      </svg>
+                    </div>
+
+                    <div class="flex -space-x-2 overflow-hidden mt-2.5 p-2">
+                      <img
+                        class="inline-block h-8 w-8 rounded-full ring-2 ring-white"
+                        src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                        alt=""
+                      />
+                      <img
+                        class="inline-block h-8 w-8 rounded-full ring-2 ring-white"
+                        src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="flex-auto w-1/2 flex flex-col p-4 border border-gray-700 rounded-2xl"
+                  >
+                    <p class="text-white text-sm flex-1">Transaction</p>
+                    <p class="text-3xl text-white">
+                      <span
+                        data-purecounter-start="0"
+                        data-purecounter-end="43"
+                        class="purecounter"
+                        >0</span
+                      >
+                      K
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <p
+                  class="text-white text-center mb-4"
+                  data-aos="fade-up"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-duration="600"
+                >
+                  Widget control
+                </p>
+                <p
+                  class="text-gray-500 text-center mb-2"
+                  data-aos="fade-up"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-duration="500"
+                >
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Mollitia tempore consequatur asperiores dignissimos magni
+                  cumque sit alias omnis possimus culpa quasi beatae excepturi
+                  tempora libero,
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- 45 -->
+          <div class="max-w-3xl mx-auto flex items-center gap-10 mt-20">
+            <p
+              class="flex items-baseline text-[100px] font-semibold"
+              data-aos="fade-right"
+              data-aos-easing="ease-in-sine"
+              data-aos-duration="800"
+            >
+              <span class="w-[50px] text-base font-medium">Up to</span>
+              45%
+            </p>
+            <p
+              data-aos="fade-right"
+              data-aos-easing="ease-in-sine"
+              data-aos-duration="1000"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ipsa
+              aspernatur eius sequi numquam rerum laborum voluptate tempore
+              repudiandae, ratione quaerat odio laudantium laboriosam molestiae
+              veritatis eveniet beatae soluta ex.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- SECTION 3 -->
+      <section class="my-20 xl:container py-10">
+        <h3 class="text-[100px] font-medium leading-tight animatedSlideUpText">
+          Maximize <span class="text-gray-200">efficiency</span> with out
+          intuitive
+        </h3>
+        <div class="flex justify-between items-center">
+          <div class="flex -space-x-2 overflow-hidden">
+            <div
+              class="inline-block bg-apt-gray-50 p-6 h-24 w-24 rounded-full ring-2 ring-white z-10"
+              data-aos="zoom-in"
+              data-aos-easing="ease-in-sine"
+              data-aos-duration="500"
+            >
+              <div class="p-1 rounded-xl bg-apt-orange">
+                <svg
+                  stroke="#fff"
+                  fill="none"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M3 12h4.5l1.5 -6l4 12l2 -9l1.5 3h4.5"></path>
+                </svg>
+              </div>
+            </div>
+            <div
+              class="inline-block bg-apt-yellow p-4 h-24 w-24 rounded-full ring-2 ring-white"
+              data-aos="zoom-in"
+              data-aos-easing="ease-in-sine"
+              data-aos-duration="700"
+            >
+              <div class="text-center">
+                <p class="text-2xl">45%</p>
+                <p class="text-xs">System grow faster</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-apt-yellow w-[350px] overflow-hidden rounded-[50px]">
+            <marquee>
+              <p class="text-7xl font-medium">Analytics service</p>
+            </marquee>
+          </div>
+        </div>
+        <div class="mt-10 py-10 flex justify-between border-t">
+          <p
+            class="flex-1 w-3/5"
+            data-aos="fade-up"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="400"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum in
+            rerum nisi fuga error ducimus pariatur sunt quas. Nihil sed quis
+            laborum provident adipisci et mollitia quidem quisquam atque
+            officia.
+          </p>
+          <div class="flex flex-col items-end flex-1 w-2/5">
+            <div class="flex gap-4">
+              <button
+                class="rounded-xl px-8 py-2 bg-apt-gray-50"
+                data-aos="zoom-in"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="800"
+              >
+                Request a demo
+              </button>
+              <button
+                class="rounded-xl px-8 py-2 bg-apt-orange text-white"
+                data-aos="zoom-in"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="1000"
+              >
+                Start for free
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SECTION 4 -->
+      <section
+        class="rounded-[70px] bg-apt-gray py-24 overflow-hidden h-[700px]"
+      >
+        <div class="xl:container relative">
+          <div class="flex gap-10">
+            <div class="w-2/5">
+              <h2
+                class="font-medium text-5xl"
+                data-aos="fade-up"
+                data-aos-easing="linear"
+                data-aos-duration="200"
+              >
+                Turning data into real action idea
+              </h2>
+
+              <ul class="pr-24 my-10">
+                <li
+                  class="py-3 px-4 flex items-center bg-white shadow-md rounded-2xl my-5"
+                  data-aos="fade-up"
+                  data-aos-easing="linear"
+                  data-aos-duration="300"
+                >
+                  <p class="flex-1">Instant insights</p>
+                  <span
+                    class="w-10 h-10 flex justify-center items-center bg-apt-gray-50 rounded-full text-lg"
+                    >+</span
+                  >
+                </li>
+                <li
+                  class="py-3 px-4 flex items-center bg-white shadow-md rounded-2xl my-5"
+                  data-aos="fade-up"
+                  data-aos-easing="linear"
+                  data-aos-duration="400"
+                >
+                  <p class="flex-1">AI technology</p>
+                  <span
+                    class="w-10 h-10 flex justify-center items-center bg-apt-gray-50 rounded-full text-lg"
+                    >+</span
+                  >
+                </li>
+                <li
+                  class="py-3 px-4 flex items-center bg-white shadow-md rounded-2xl my-5"
+                  data-aos="fade-up"
+                  data-aos-easing="linear"
+                  data-aos-duration="500"
+                >
+                  <p class="flex-1">Easy integration</p>
+                  <span
+                    class="w-10 h-10 flex justify-center items-center bg-apt-gray-50 rounded-full text-lg"
+                    >+</span
+                  >
+                </li>
+                <li
+                  class="py-3 px-4 flex items-center bg-white shadow-md rounded-2xl my-5"
+                  data-aos="fade-up"
+                  data-aos-easing="linear"
+                  data-aos-duration="600"
+                >
+                  <p class="flex-1">Fast Payment</p>
+                  <span
+                    class="w-10 h-10 flex justify-center items-center bg-apt-gray-50 rounded-full text-lg"
+                    >+</span
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="flex-auto">
+              <img
+                src="https://cdn.dribbble.com/userupload/12167451/file/original-9244f82e26d151852bd4feb2f1a51123.png?resize=2048x1536"
+                alt="large banner"
+                class="absolute rounded-s-[70px]"
+                data-aos="fade-up"
+                data-aos-easing="linear"
+                data-aos-duration="2000"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SECTION 5 -->
+      <section class="my-20 xl:container py-10">
+        <h3 class="text-[100px] font-medium leading-tight animatedSlideUpText">
+          We give you full <span class="text-gray-200">control</span> over your
+          data
+        </h3>
+
+        <div class="flex gap-10 mt-20">
+          <div class="flex-1 p-8 bg-apt-gray rounded-2xl overflow-hidden">
+            <div class="flex justify-center">
+              <div class="flex -space-x-4">
+                <div
+                  class="bg-white rounded-2xl p-4 drop-shadow-xl w-48"
+                  data-aos="fade-right"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"
+                >
+                  <p class="text-center text-sm">Coversation rate</p>
+                  <p
+                    class="my-4 bg-apt-yellow text-center text-3xl p-6 rounded-2xl"
+                  >
+                    2.3%
+                  </p>
+                  <p class="text-gray-500 text-center text-sm">
+                    Percentage of website visitor
+                  </p>
+                </div>
+                <!--  -->
+                <div
+                  data-aos="fade-down"
+                  data-aos-easing="linear"
+                  data-aos-duration="800"
+                >
+                  <div
+                    class="translate-y-10 bg-white rounded-2xl p-4 drop-shadow-xl w-48 border"
+                  >
+                    <p class="text-sm text-gray-500">Sales revenue</p>
+                    <p class="text-3xl">
+                      <span class="text-lg">$</span>
+                      <span
+                        data-purecounter-start="0"
+                        data-purecounter-end="265"
+                        class="purecounter"
+                        >0</span
+                      >
+                      K
+                    </p>
+                    <div class="h-1 rounded-full my-4 flex">
+                      <div class="h-full w-2/5 bg-green-500"></div>
+                      <div class="h-full w-2/5 bg-apt-yellow"></div>
+                      <div class="h-full w-1/5 bg-green-500"></div>
+                    </div>
+                    <div class="flex items-center my-2">
+                      <div class="flex items-center flex-1">
+                        <img
+                          class="inline-block h-8 w-8 rounded-full ring-2 ring-white"
+                          src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                          alt=""
+                        />
+                        <p class="text-xs ml-2">Min price</p>
+                      </div>
+                      <p class="text-xs">200k</p>
+                    </div>
+
+                    <div class="flex items-center my-2">
+                      <div class="flex items-center flex-1">
+                        <img
+                          class="inline-block h-8 w-8 rounded-full ring-2 ring-white"
+                          src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                          alt=""
+                        />
+                        <p class="text-xs ml-2">Max price</p>
+                      </div>
+                      <p class="text-xs">40k</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              data-aos="fade-up"
+              data-aos-offset="200"
+              data-aos-easing="ease-in-sine"
+              class="w-2/3 mx-auto mt-16 text-center"
+            >
+              <p class="font-light text-lg leading-relaxed mb-1">
+                Improved customer service
+              </p>
+              <p class="text-sm">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam
+                eligendi fuga similique sint doloremque sunt.
+              </p>
+            </div>
+          </div>
+          <div class="flex-1 bg-apt-gray rounded-2xl p-8 overflow-hidden">
+            <div class="flex flex-col justify-between">
+              <div
+                class="w-3/5 mx-auto px-4"
+                data-aos="fade-up"
+                data-aos-easing="linear"
+                data-aos-duration="350"
+              >
+                <div class="bg-white rounded-t-2xl drop-shadow-xl p-4">
+                  <p class="mb-6 text-sm">France reports</p>
+                </div>
+              </div>
+              <div
+                data-aos="fade-up"
+                data-aos-easing="linear"
+                data-aos-duration="300"
+              >
+                <div
+                  class="bg-white rounded-2xl drop-shadow-xl p-4 w-3/5 mx-auto -translate-y-10 border"
+                >
+                  <div class="grid grid-cols-2 gap-6">
+                    <div class="flex flex-col justify-center">
+                      <p class="mb-10">Insights</p>
+                      <p class="text-sm text-gray-500">Sales revenue</p>
+                      <p class="text-3xl">
+                        <span class="text-lg">$</span>
+                        <span
+                          data-purecounter-start="0"
+                          data-purecounter-end="265"
+                          class="purecounter"
+                          >0</span
+                        >
+                        K
+                      </p>
+                      <span
+                        class="bg-apt-yellow py-1 text-center text-xs rounded-lg mt-2"
+                        >Data visualization</span
+                      >
+                    </div>
+                    <img src="./images/growth.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              data-aos="fade-up"
+              data-aos-offset="200"
+              data-aos-easing="ease-in-sine"
+              class="w-2/3 mx-auto text-center"
+            >
+              <p class="font-light text-lg leading-relaxed mb-1">
+                Monitor key indicator
+              </p>
+              <p class="text-sm">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam
+                eligendi fuga similique sint doloremque sunt.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-40 flex flex-col items-center text-center space-y-10">
+          <img
+            src="./images/short-logo-orange.png"
+            alt=""
+            class="rounded-2xl w-24 h-24 shadow-lg"
+            data-aos="zoom-out"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+          />
+          <!-- typewriter -->
+          <h2
+            class="text-7xl font-semibold"
+            id="typewriter"
+            data-aos="zoom-out"
+            data-aos-easing="linear"
+            data-aos-duration="300"
+          ></h2>
+          <p
+            class="text-gray-400 text-lg w-96"
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="200"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta,
+            laboriosam! consectetur
+          </p>
+          <div class="flex gap-4">
+            <button
+              class="rounded-xl px-8 py-2 bg-apt-gray-50"
+              data-aos="zoom-in"
+              data-aos-easing="linear"
+              data-aos-duration="300"
+            >
+              Request a demo
+            </button>
+            <button
+              class="rounded-xl px-8 py-2 bg-apt-orange text-white"
+              data-aos="zoom-in"
+              data-aos-easing="linear"
+              data-aos-duration="400"
+            >
+              Start for free
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-apt-black py-10">
+      <div class="xl:container">
+        <div class="flex justify-between py-10 border-b border-gray-700">
+          <ul
+            class="flex items-center gap-10"
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="300"
+          >
+            <li class="text-gray-500 font-light leading-tight">About</li>
+            <li class="text-gray-500 font-light leading-tight">Why Us</li>
+            <li class="text-gray-500 font-light leading-tight">Platform</li>
+            <li class="text-gray-500 font-light leading-tight">Pricing</li>
+            <li class="text-gray-500 font-light leading-tight">Contact</li>
+          </ul>
+          <p
+            class="text-5xl text-white"
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="400"
+          >
+            hello@ramos.com
+          </p>
+        </div>
+
+        <div class="flex items-center justify-between py-10">
+          <div
+            class="w-2/5 flex gap-16"
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="500"
+          >
+            <div>
+              <p class="text-white font-semibold mb-1">Warrens Heights</p>
+              <p class="text-gray-500">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+            </div>
+            <div>
+              <p class="text-white font-semibold mb-1">Saint Louis</p>
+              <p class="text-gray-500">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+            </div>
+          </div>
+          <ul
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="600"
+          >
+            <li class="text-white mb-4">Linkedin</li>
+            <li class="text-white mb-4">Twitter</li>
+            <li class="text-white">Facebook</li>
+          </ul>
+        </div>
+        <div class="grid grid-cols-2 gap-10">
+          <h1 class="text-[150px] text-white animatedSlideUpText">
+            Ramos<sup>&reg;</sup>
+          </h1>
+          <div
+            class="flex items-center gap-10"
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="700"
+          >
+            <p class="text-gray-500 font-light leading-tight">Privacy policy</p>
+            <p class="text-gray-500 font-light leading-tight">
+              Licence agreeement
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <script>
+      new PureCounter();
+
+      AOS.init();
+
+      new TypeIt('#typewriter', {
+        strings: 'Get Started',
+        waitUntilVisible: true,
+        speed: 50,
+        cursor: false,
+        afterStep: async function (instance) {
+          const element = instance.getElement();
+          element.classList.add('zoom-animation');
+        },
+      }).go();
+    </script>
+  </body>
+</html>

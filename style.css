@@ -1,0 +1,50 @@
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.zoom-animation {
+  animation: zoomIn 1s ease forwards;
+}
+
+.animatedText {
+  overflow: hidden;
+}
+
+.animatedText .letter {
+  display: inline-block;
+  position: relative;
+  transform: translateY(100%);
+}
+
+.animatedText .letter:after {
+  content: attr(data-char);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.7s linear;
+  transition-delay: calc(0.05s * var(--char-index));
+}
+
+.animatedText.show .letter:after {
+  transform: translateY(-100%);
+}
+
+.animatedSlideUpText.show {
+  animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
