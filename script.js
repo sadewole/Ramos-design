@@ -12,9 +12,10 @@ const animateElements = document.querySelectorAll('.animatedText');
 const animatedSlideUpElements = document.querySelectorAll(
   '.animatedSlideUpText'
 );
-animatedSlideUpElements.forEach((el) => observer.observe(el));
 
 document.addEventListener('DOMContentLoaded', function () {
+  animatedSlideUpElements.forEach((el) => observer.observe(el));
+
   animateElements.forEach((el) => {
     observer.observe(el);
     let text = el.textContent.trim();
@@ -22,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     for (var i = 0; i < text.length; i++) {
       if (text[i] === ' ') {
-        newText += '<span class="space">&nbsp;</span>'; // Preserve space with non-breaking space
+        newText += '<span class="space">&nbsp;</span>';
       } else {
         newText += `<span class="letter" data-char=${text[i]} style="--char-index: ${i}">${text[i]}</span>`;
       }
